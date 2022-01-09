@@ -16,6 +16,28 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "components": [
+        "dist/components/components",
+        "dist/components"
+      ],
+      "p-button": [
+        "dist/p-button/p-button",
+        "dist/p-button"
+      ],
+      "p-components": [
+        "dist/p-components/p-components",
+        "dist/p-components"
+      ],
+      "p-dialog": [
+        "dist/p-dialog/p-dialog",
+        "dist/p-dialog"
+      ],
+      "p-message-popover": [
+        "dist/p-message-popover/p-message-popover",
+        "dist/p-message-popover"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [

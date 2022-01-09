@@ -3,5 +3,161 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "p-button": {
+      "projectType": "library",
+      "root": "projects/p-button",
+      "sourceRoot": "projects/p-button/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/p-button/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/p-button/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/p-button/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/p-button/src/test.ts",
+            "tsConfig": "projects/p-button/tsconfig.spec.json",
+            "karmaConfig": "projects/p-button/karma.conf.js"
+          }
+        }
+      }
+    },
+    "p-dialog": {
+      "projectType": "library",
+      "root": "projects/p-dialog",
+      "sourceRoot": "projects/p-dialog/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/p-dialog/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/p-dialog/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/p-dialog/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/p-dialog/src/test.ts",
+            "tsConfig": "projects/p-dialog/tsconfig.spec.json",
+            "karmaConfig": "projects/p-dialog/karma.conf.js"
+          }
+        }
+      }
+    },
+    "p-message-popover": {
+      "projectType": "library",
+      "root": "projects/p-message-popover",
+      "sourceRoot": "projects/p-message-popover/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/p-message-popover/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/p-message-popover/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/p-message-popover/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/p-message-popover/src/test.ts",
+            "tsConfig": "projects/p-message-popover/tsconfig.spec.json",
+            "karmaConfig": "projects/p-message-popover/karma.conf.js"
+          }
+        }
+      }
+    },
+    "components": {
+      "projectType": "library",
+      "root": "projects/components",
+      "sourceRoot": "projects/components/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/components/src/test.ts",
+            "tsConfig": "projects/components/tsconfig.spec.json",
+            "karmaConfig": "projects/components/karma.conf.js"
+          }
+        }
+      }
+    },
+    "p-components": {
+      "projectType": "library",
+      "root": "projects/p-components",
+      "sourceRoot": "projects/p-components/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/p-components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/p-components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/p-components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/p-components/src/test.ts",
+            "tsConfig": "projects/p-components/tsconfig.spec.json",
+            "karmaConfig": "projects/p-components/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "p-components"
 }
